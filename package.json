@@ -1,0 +1,20 @@
+{
+  "name": "card-match",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HewittDwight-FS-1/card-match.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HewittDwight-FS-1/card-match/issues"
+  },
+  "homepage": "https://github.com/HewittDwight-FS-1/card-match#readme",
+  "description": ""
+}
