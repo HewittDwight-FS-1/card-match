@@ -1,2 +1,85 @@
 // SCSS Variables
-$bg-color: ;
+$bg-color: #2a9134;
+$card-size: 100px;
+$text-color: #fff;
+$button-color: #00b4d8;
+
+// Nesting & Variables
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+
+    h1,
+    p {
+      margin: 10px 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+    #attempts {
+      font-size: 1.2rem;
+      margin-top: 8px;
+    }
+
+    #game-board {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+
+      .card {
+        width: 120px;
+        height: 160px;
+        background-color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        line-height: 160px;
+        color: transparent;
+        transition: all 0.3s ease;
+      }
+
+      .card.flipped {
+        background-image: none;
+        color: #000;
+      }
+    }
+
+    #result {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    #restart {
+      padding: 10px 20px;
+      background-color: $button-color;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
